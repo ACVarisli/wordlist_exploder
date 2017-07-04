@@ -10,7 +10,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 
-namespace WindowsFormsApplication3
+namespace wordlistexploder
 {
     public partial class Form1 : Form
     {
