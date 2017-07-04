@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +10,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 
-namespace wordlistexploder
+namespace WindowsFormsApplication3
 {
     public partial class Form1 : Form
     {
@@ -46,19 +46,10 @@ namespace wordlistexploder
                            if (fileline > 0)
                            {
 
-                               if (!filelines.Contains(":"))
-                               {
-                                   MessageBox.Show("Bu bir combo değil.", "HATA!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                               }
-                               else
-                               {
                                    button2.Enabled = true;
                                    label1.Text = "Kullanıcı bekleniyor";
                                    toolStripStatusLabel1.Text = "Dosya Seçildi: " + safeName;
                                    toolStripStatusLabel3.Text = fileline + " Satır";
-
-                               }
 
                            }
 
@@ -166,3 +157,4 @@ namespace wordlistexploder
 
     }
 }
+
