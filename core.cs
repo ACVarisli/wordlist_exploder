@@ -21,7 +21,6 @@ namespace wordlist_exploder
         }
 
 
-        public int type;
         private void button1_Click(object sender, EventArgs e)
         {
             Stream stream = null;
