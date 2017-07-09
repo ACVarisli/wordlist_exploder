@@ -115,15 +115,15 @@ namespace wordlist_exploder
                         Directory.CreateDirectory(Path.Combine(currentPath, "results"));
 
                     // Writing text file (UID)
-                    using (System.IO.StreamWriter uid =
+                    using (StreamWriter uid =
                 new StreamWriter(Application.StartupPath + "/results/uid.txt", true))
                     {
                         uid.WriteLine(result[0]);
                     }
 
                     // Writing text file (PASS)
-                    using (System.IO.StreamWriter pass =
-    new System.IO.StreamWriter(Application.StartupPath + "/results/pass.txt", true))
+                    using (StreamWriter pass =
+    new StreamWriter(Application.StartupPath + "/results/pass.txt", true))
                     {
                         pass.WriteLine(result[1]);
                     }
@@ -142,7 +142,7 @@ namespace wordlist_exploder
                 if (sr.EndOfStream)
                 {
                     MessageBox.Show("Ayırma İşlemi Tamamlandı", "Tamamlandı!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    System.Diagnostics.Process.Start(@currentPath+"/results");
+                    Process.Start(@currentPath+"/results");
                     button2.Enabled = true;
                 }
         }
